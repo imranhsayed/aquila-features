@@ -1,0 +1,28 @@
+{
+    "name": "imransayed/aquila-features",
+    "description": "Aquila Features WordPress Plugin",
+    "license": "GPL",
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^2.3",
+		"phpcompatibility/phpcompatibility-wp": "^2.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+    "authors": [
+        {
+            "name": "Imran Sayed",
+            "email": "codeytek.academy@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"AquilaFeatures\\": "src/"
+		},
+		"classmap": [
+			"includes/"
+		]
+	}
+}

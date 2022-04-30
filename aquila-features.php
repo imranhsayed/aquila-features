@@ -14,3 +14,4 @@
  * Domain Path:       /languages
  */
 
+require_once 'vendor/autoload.php';
