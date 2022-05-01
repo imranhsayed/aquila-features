@@ -1,0 +1,21 @@
+{
+  "name": "aquila-features",
+  "version": "1.0.0",
+  "description": "Advanced WordPress Plugin Development",
+  "main": "index.js",
+  "scripts": {
+	  "lint:php": "vendor/bin/phpcs",
+	  "lint:php:fix": "vendor/bin/phpcbf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imranhsayed/aquila-features.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imranhsayed/aquila-features/issues"
+  },
+  "homepage": "https://github.com/imranhsayed/aquila-features#readme"
+}
