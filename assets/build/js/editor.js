@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/sass/editor.scss":
-/*!******************************!*\
-  !*** ./src/sass/editor.scss ***!
-  \******************************/
+/***/ "./assets/src/sass/editor.scss":
+/*!*************************************!*\
+  !*** ./assets/src/sass/editor.scss ***!
+  \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -56,11 +56,11 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-/*!**************************!*\
-  !*** ./src/js/editor.js ***!
-  \**************************/
+/*!*********************************!*\
+  !*** ./assets/src/js/editor.js ***!
+  \*********************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _sass_editor_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/editor.scss */ "./src/sass/editor.scss");
+/* harmony import */ var _sass_editor_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/editor.scss */ "./assets/src/sass/editor.scss");
 // Styles
 
 }();

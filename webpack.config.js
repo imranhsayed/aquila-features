@@ -12,10 +12,10 @@ const CopyPlugin = require('copy-webpack-plugin'); // https://webpack.js.org/plu
 const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
 
 // JS Directory path.
-const JS_DIR = path.resolve( __dirname, 'src/js' );
-const IMG_DIR = path.resolve( __dirname, 'src/img' );
-// const LIB_DIR = path.resolve( __dirname, 'src/library' );
-const BUILD_DIR = path.resolve( __dirname, 'build' );
+const JS_DIR = path.resolve( __dirname, 'assets/src/js' );
+const IMG_DIR = path.resolve( __dirname, 'assets/src/img' );
+// const LIB_DIR = path.resolve( __dirname, 'assets/src/library' );
+const BUILD_DIR = path.resolve( __dirname, 'assets/build' );
 
 const entry = {
 	editor: JS_DIR + '/editor.js',

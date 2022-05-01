@@ -6,13 +6,15 @@
 	"scripts": {
 		"prod": "cross-env NODE_ENV=production webpack --mode production --progress",
 		"dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
-		"clean": "rm -rf build/*",
-		"svg": "svgr -d src/js/icons src/icons",
-		"lint": "eslint src/js/*",
-		"lint:fix": "eslint --fix src/js/*",
-		"lint-css": "stylelint 'src/sass/**/*.scss'",
+		"clean": "rm -rf assets/build/*",
+		"svg": "svgr -d assets/src/js/icons assets/src/icons",
+		"lint:php": "vendor/bin/phpcs",
+		"lint:php:fix": "vendor/bin/phpcbf",
+		"lint": "eslint assets/src/js/*",
+		"lint:fix": "eslint --fix assets/src/js/*",
+		"lint-css": "stylelint 'assets/src/sass/**/*.scss'",
 		"lint-css:fix": "npm run lint-css -- --fix",
-		"precommit": "npm run lint-css:fix && npm run lint:fix && npm run prod"
+		"precommit": "npm run lint:php && npm run lint-css:fix && npm run lint:fix && npm run prod"
 	},
 	"keywords": [
 		"wordpress",
