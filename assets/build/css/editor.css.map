@@ -1,0 +1,1 @@
+{"version":3,"file":"css/editor.css","mappings":";;;AAEA;EACC,gCAAgC","sources":["webpack://aquila-features/./src/sass/editor.scss"],"sourcesContent":["// Styles to be added.\n\nbody {\n\tbackground-color: red !important;\n}\n"],"names":[],"sourceRoot":""}
