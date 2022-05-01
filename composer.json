@@ -1,7 +1,16 @@
 {
     "name": "imransayed/aquila-features",
     "description": "Aquila Features WordPress Plugin",
-    "license": "GPL",
+	"license": "GPL-3.0+",
+	"version": "1.0.0",
+	"keywords": [
+		"wordpress",
+		"plugin"
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"homepage": "https://github.com/imranhsayed/aquila-features",
 	"require-dev": {
 		"wp-coding-standards/wpcs": "^2.3",
 		"phpcompatibility/phpcompatibility-wp": "^2.1"
@@ -20,9 +29,6 @@
 	"autoload": {
 		"psr-4": {
 			"AquilaFeatures\\": "src/"
-		},
-		"classmap": [
-			"includes/"
-		]
+		}
 	}
 }
