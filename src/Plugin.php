@@ -30,6 +30,7 @@ class Plugin {
 		define( 'AQUILA_FEATURES_PLUGIN_VERSION', '1.0.0' );
 
 		new Assets();
+		new Patterns();
 	}
 }
 
