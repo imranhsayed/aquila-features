@@ -71,7 +71,7 @@ const rules = [
 		use: {
 			loader: 'file-loader',
 			options: {
-				name: '[path][name].[ext]',
+				name: 'img/[name].[ext]',
 				publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
 			}
 		}

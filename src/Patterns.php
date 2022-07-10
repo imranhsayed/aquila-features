@@ -51,6 +51,21 @@ class Patterns {
 					'content'     => $two_columns_content,
 				]
 			);
+
+			/**
+			 * Two Columns Secondary Pattern
+			 */
+			$two_columns_secondary_content = aquila_features_get_template( 'patterns/two-columns-secondary' );
+
+			register_block_pattern(
+				'aquila-features/two-columns-secondary',
+				[
+					'title'       => __( 'Aquila Two Columns Secondary', 'aquila-features' ),
+					'description' => __( 'Aquila Cover Block with image and text', 'aquila-features' ),
+					'categories'  => [ 'aquila-columns' ],
+					'content'     => $two_columns_secondary_content,
+				]
+			);
 		}
 	}
 
@@ -73,4 +88,3 @@ class Patterns {
 		}
 	}
 }
-
