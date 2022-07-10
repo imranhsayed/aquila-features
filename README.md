@@ -1,10 +1,19 @@
 # aquila-features
 Advanced WordPress Plugin Development
 
-##setup
+# Setup
 How to set up the plugin.
 
-#development
+## Install Setup Packaaes.
 
-- `npm install && composer install`
+- `npm ci && composer install`
+
+# Development
+
+## Start Development Server.
 - `npm run dev`
+
+## Run PHPCS.
+
+- `npm run lint:php`
+- `npm run lint:php:fix`

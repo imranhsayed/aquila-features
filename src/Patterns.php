@@ -75,7 +75,7 @@ class Patterns {
 	public function register_block_pattern_categories() {
 
 		$pattern_categories = [
-			'aquila-columns' => __( 'Aquila Columns', 'aquila-features' ),
+			'aquila-columns' => __( 'Aquila Features Columns', 'aquila-features' ),
 		];
 
 		if ( ! empty( $pattern_categories ) ) {

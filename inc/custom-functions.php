@@ -39,3 +39,7 @@ function aquila_features_get_template( string $template, array $variables = [], 
 	echo $markup; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Output escaped already in template.
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 65bde9b00165a19a415bfa40167de88b9aa741b4
