@@ -1,4 +1,4 @@
-=== Headless CMS ===
+=== Aquila Features ===
 Contributors: gsayed786
 Tags: gutenberg, block, patterns
 Requires at least: 4.6
