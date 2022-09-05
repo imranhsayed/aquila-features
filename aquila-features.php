@@ -9,7 +9,7 @@
  * Plugin Name:       Aquila Features
  * Plugin URI:        https://codeytek.com/aquila-features/
  * Description:       Adds Gutenberg Blocks.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Imran Sayed
