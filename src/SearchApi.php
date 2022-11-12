@@ -95,48 +95,48 @@ class SearchApi {
 	 *
 	 * @param WP_REST_Request $request Request object.
 	 *
-	 * @return WP_REST_Response|WP_Error
+	 * @return WP_REST_Response
 	 */
-	public function get_items( WP_REST_Request $request ) {
-		$this->search_term    = $request->get_param( 'q' );
-		$this->category_ids   = $request->get_param( 'categories' );
-		$this->tag_ids        = $request->get_param( 'tags' );
-		$this->page_no        = $request->get_param( 'page_no' );
-		$this->posts_per_page = $request->get_param( 'posts_per_page' );
-		$search_query       = [
-			'posts_per_page'         => $this->posts_per_page ? intval( $this->posts_per_page ) : 9,
+	public function get_items( WP_REST_Request $request ): WP_REST_Response {
+		$search_term    = $request->get_param( 'q' );
+		$category_ids   = $request->get_param( 'categories' );
+		$tag_ids        = $request->get_param( 'tags' );
+		$page_no        = $request->get_param( 'page_no' );
+		$posts_per_page = $request->get_param( 'posts_per_page' );
+		$search_query   = [
+			'posts_per_page'         => $posts_per_page ? intval( $posts_per_page ) : 9,
 			'post_status'            => 'publish',
-			'paged'                  => $this->page_no ? intval( $this->page_no ) : 1,
+			'paged'                  => $page_no ? intval( $page_no ) : 1,
 			'update_post_meta_cache' => false,
 			'update_post_term_cache' => false,
 		];
 
 		// Add search query args.
-		if ( ! empty( $this->search_term ) ) {
-			$search_query['s'] = $this->search_term;
+		if ( ! empty( $search_term ) ) {
+			$search_query['s'] = $search_term;
 		}
 
 		// Add tax_query_array args.
-		if ( ! empty( $this->category_ids ) || ! empty( $this->tag_ids ) ) {
+		if ( ! empty( $category_ids ) || ! empty( $tag_ids ) ) {
 			$search_query['tax_query'] = [];
 		}
 
 		// Add category query args.
-		if ( ! empty( $this->category_ids ) ) {
+		if ( ! empty( $category_ids ) ) {
 			$search_query['tax_query'][] = [
 				'taxonomy' => 'category',
 				'field'    => 'id',
-				'terms'    => array_map( 'intval', explode( ',', $this->category_ids ) ),
+				'terms'    => array_map( 'intval', explode( ',', $category_ids ) ),
 				'operator' => 'IN',
 			];
 		}
 
 		// Add tags query args.
-		if ( ! empty( $this->tag_ids ) ) {
+		if ( ! empty( $tag_ids ) ) {
 			$search_query['tax_query'][] = [
 				'taxonomy' => 'post_tag',
 				'field'    => 'id',
-				'terms'    => array_map( 'intval', explode( ',', $this->tag_ids ) ),
+				'terms'    => array_map( 'intval', explode( ',', $tag_ids ) ),
 				'operator' => 'IN',
 			];
 		}
