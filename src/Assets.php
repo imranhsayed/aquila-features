@@ -20,7 +20,7 @@ class Assets {
 	}
 
 	/**
-	 * Initialize plugin
+	 * Initialize.
 	 */
 	private function init() {
 		/**

@@ -20,7 +20,7 @@ class Patterns {
 	}
 
 	/**
-	 * Initialize plugin
+	 * Initialize.
 	 */
 	private function init() {
 		/**
