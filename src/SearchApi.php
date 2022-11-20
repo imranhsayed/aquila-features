@@ -45,7 +45,7 @@ class SearchApi {
 
 		/**
 		 * Register search api.
-		 * e.g. https://example.com/wp-json/af/v1/search?q='Hello'&categories=23,43&tags=23,32&page_no=1&posts_per_page=9
+		 * e.g. https://example.com/wp-json/af/v1/search?q='Hello'&category=23,43&post_tag=23,32&page_no=1&posts_per_page=9
 		 */
 		register_rest_route(
 			'af/v1',
