@@ -45,7 +45,7 @@ class SearchApi {
 
 		/**
 		 * Register search api.
-		 * e.g. https://example.com/wp-json/af/v1/search?q='Hello'&categories=23,43&tags=23,32&page_no=1&posts_per_page=9
+		 * e.g. https://example.com/wp-json/af/v1/search?q='Hello'&category=23,43&post_tag=23,32&page_no=1&posts_per_page=9
 		 */
 		register_rest_route(
 			'af/v1',
@@ -99,8 +99,8 @@ class SearchApi {
 	 */
 	public function get_items( WP_REST_Request $request ): WP_REST_Response {
 		$search_term    = $request->get_param( 'q' );
-		$category_ids   = $request->get_param( 'categories' );
-		$tag_ids        = $request->get_param( 'tags' );
+		$category_ids   = $request->get_param( 'category' );
+		$tag_ids        = $request->get_param( 'post_tag' );
 		$page_no        = $request->get_param( 'page_no' );
 		$posts_per_page = $request->get_param( 'posts_per_page' );
 		$search_query   = [
