@@ -33,5 +33,4 @@ if ( class_exists( 'AquilaFeatures\Plugin' ) ) {
 }
 
 register_activation_hook( __FILE__, [ $the_plugin, 'activate' ] );
-
 register_deactivation_hook( __FILE__, [ $the_plugin, 'deactivate' ] );

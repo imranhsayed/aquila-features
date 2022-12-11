@@ -19,6 +19,9 @@ class Plugin {
 		$this->init();
 	}
 
+	public function activate() {}
+	public function deactivate() {}
+
 	/**
 	 * Initialize plugin
 	 */
